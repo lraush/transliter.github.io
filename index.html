@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./index.js"></script>
+    <title>Транслит</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">T.R.A.N.S.L.I.T.</h1>
+      <form action="#" class="form">
+        <label for="#user__text" id="#user__text"></label>
+        <input
+          id="user__text"
+          type="text"
+          placeholder="Начните вводить текст"
+        />
+        <button class="btn__add">Добавить</button>
+      </form>
+      <div class="list__wrapper">
+        <ul class="list_ru list">
+          <li class="list__item" id="li">
+            <span>1</span>
+            <span>Привет</span>
+          </li>
+        </ul>
+        <ul class="list_lt list">
+          <li class="list__item">
+            <span class="mobil">1</span>
+            <span>Privet</span>
+            <button class="item__reset" type="reset"></button>
+          </li>
+        </ul>
+      </div>
+      <button class="btn__reset" type="reset">Очистить всё</button>
+    </section>
+  </body>
+</html>

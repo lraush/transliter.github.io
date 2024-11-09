@@ -1,0 +1,355 @@
+.hover {
+  opacity: 1;
+  width: 80%;
+}
+.hover:hover {
+  opacity: 0;
+}
+.toolTips {
+  transition: 500ms;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  width: 80%;
+}
+.toolTips:hover {
+  opacity: 1;
+  transform: scaleY(1.3);
+  background-color: #fff;
+  width: 80%;
+  border-radius: 8px;
+}
+.list__reset {
+  background-image: url(../icons/reset.svg);
+  width: 23px;
+  height: 23px;
+  border-radius: 20px;
+  border: none;
+  align-items: end;
+}
+li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  height: 40px;
+  position: relative;
+}
+li:last-child {
+  border: none;
+}
+span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.container {
+  max-width: 400px;
+  margin: 5% auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: #4520ab;
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 600;
+  text-align: center;
+}
+.form {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+#user__text {
+  width: 328px;
+  height: 56px;
+  border-radius: 8px;
+  opacity: 0.4;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 2px solid #000;
+}
+.btn__add {
+  position: absolute;
+  left: 235px;
+  top: 12px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 107px;
+  height: 38px;
+}
+ul {
+  list-style-type: none;
+}
+.list__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.list {
+  padding: 0 20px;
+}
+.list__item {
+  width: 250px;
+  height: 45px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+/* .list_ru {
+  margin-bottom: 0;
+  border-bottom: 2px solid #000;
+} */
+.list__item:last-child {
+  border: none;
+}
+.list_ru:first-child {
+  background-color: #f0f0f0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+  margin-top: 40px;
+}
+.list_ru:last-child {
+  border-bottom: 2px solid #000;
+}
+.list_lt {
+  margin-top: 40px;
+  background-color: #adadad;
+  padding-top: 0px;
+  border-top-right-radius: 8px;
+}
+.list_lt:last-child {
+  border-bottom-right-radius: 8px;
+  border-right: none;
+}
+.li__text {
+  flex-grow: 2;
+}
+.item__reset {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: none;
+  background-image: url(../icons/reset.svg);
+  border: none;
+  right: 0px;
+  bottom: 5px;
+  border-radius: 11px;
+}
+.btn__reset {
+  width: 176px;
+  height: 38px;
+  position: relative;
+  margin-top: 30px;
+  background-color: #adadad;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+.btn__reset::before {
+  content: ""; /*очистить поля*/
+  background-image: url(../icons/reset.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+  .title {
+    color: #4520ab;
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  .form {
+    width: 500px;
+  }
+  #user__text {
+    width: 500px;
+    margin: 0;
+  }
+  .btn__add {
+    left: 400px;
+    top: 12px;
+  }
+  .list__wrapper {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .list_ru:first-child {
+    margin: 0;
+    border-top-right-radius: 0px;
+  }
+  .list_ru {
+    border-bottom: none;
+  }
+  .list_lt:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin: 0;
+  }
+  .marker__none {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hover {
+    opacity: 1;
+    width: 80%;
+  }
+  .hover:hover {
+    opacity: 0;
+  }
+  .toolTips {
+    transition: 500ms;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 80%;
+  }
+  .toolTips:hover {
+    opacity: 1;
+    transform: scaleY(1.3);
+    background-color: #fff;
+    width: 80%;
+    border-radius: 8px;
+  }
+  .list__reset {
+    background-image: url(../icons/reset.svg);
+    width: 23px;
+    height: 23px;
+    border-radius: 20px;
+    border: none;
+    align-items: end;
+  }
+  li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    height: 40px;
+    position: relative;
+  }
+  li:last-child {
+    border: none;
+  }
+  span {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .container {
+    max-width: 400px;
+    margin: 5% auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    color: #4520ab;
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  .form {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+  }
+  #user__text {
+    width: 328px;
+    height: 56px;
+    border-radius: 8px;
+    opacity: 0.4;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 2px solid #000;
+  }
+  .btn__add {
+    position: absolute;
+    left: 235px;
+    top: 12px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 107px;
+    height: 38px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .list__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    padding: 0 20px;
+  }
+  .list__item {
+    width: 328px;
+    height: 45px;
+    border-bottom: 1px solid #000;
+    position: relative;
+  }
+  .list_ru {
+    margin-bottom: 0;
+    border-bottom: 2px solid #000;
+    border-bottom-left-radius: 0;
+  }
+  .list__item:last-child {
+    border: none;
+  }
+  .list_ru:first-child {
+    background-color: #f0f0f0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-right: none;
+    margin-top: 40px;
+  }
+  .list_ru:last-child {
+    border-bottom: 2px solid #000;
+  }
+  .list_lt {
+    margin-top: 0;
+    background-color: #adadad;
+    padding-top: 0px;
+  }
+  .list_lt:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: none;
+  }
+  .item__reset {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: none;
+    background-image: url(../icons/reset.svg);
+    border: none;
+    right: 10px;
+    bottom: 5px;
+    border-radius: 11px;
+  }
+  .btn__reset {
+    width: 176px;
+    height: 38px;
+    position: relative;
+    margin-top: 30px;
+    background-color: #adadad;
+    border: 1px solid #000;
+    border-radius: 8px;
+  }
+  .btn__reset::before {
+    content: ""; /*очистить поля*/
+    background-image: url(../icons/reset.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+  }
+}
